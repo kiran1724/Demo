@@ -1,3 +1,8 @@
+print("-------Line 1-------")
+print("####################")
+print("-------Line 2-------")
+
+
 from selenium import webdriver
 
 desiredCapabilities={

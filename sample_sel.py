@@ -2,6 +2,8 @@ print("-------Line 1-------")
 print("####################")
 print("-------Line 2-------")
 
+import os
+print("Current directory: " + str(os.getcwd()))
 
 from selenium import webdriver
 

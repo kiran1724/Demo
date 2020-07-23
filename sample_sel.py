@@ -14,8 +14,9 @@ desiredCapabilities={
 options = webdriver.ChromeOptions()
 options.binary_location = '/usr/bin/chromedriver'
 
-driver = webdriver.Remote(chrome_options=options,desired_capabilities=desiredCapabilities, 
-			command_executor='http://10.0.2.15:4444/wd/hub')
+#driver = webdriver.Remote(desired_capabilities=desiredCapabilities, 
+#			command_executor='http://10.0.2.15:5555/wd/node')
+driver = webdriver.Chrome('/usr/bin/chromedriver')
 driver.get('https://www.amazon.in/')
 print("Title: "+ str(driver.title))
 print("Closing driver")
